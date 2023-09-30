@@ -4,6 +4,7 @@ import 'package:web_design/widget/homeview.dart';
 import 'package:web_design/widget/loginpage.dart';
 
 
+import 'discriptions.dart';
 import 'offer.dart';
 
 class homeview extends StatelessWidget {
@@ -24,6 +25,7 @@ class homeview extends StatelessWidget {
         
      body:
        SingleChildScrollView(
+        scrollDirection: Axis.vertical,
          child: Container(
           decoration: BoxDecoration(
            color: const Color.fromARGB(255, 202, 201, 201)
@@ -42,7 +44,7 @@ class homeview extends StatelessWidget {
                 height: 40,
               width: 250,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(5),
+                borderRadius: BorderRadius.circular(8),
                 color: Color.fromARGB(255, 176, 176, 176)),
                child: TextField(
                decoration: InputDecoration(
@@ -66,13 +68,15 @@ class homeview extends StatelessWidget {
                 child: Text("login",selectionColor:
                  const Color.fromARGB(255, 217, 216, 216),style:TextStyle(
                   fontWeight: FontWeight.bold) ,),),
-            ),],),
+            ),
+            ],),
          
              SizedBox( height: 10 ),
 
               SizedBox(
                       height: 500,
                       child: AnotherCarousel(
+                  
               boxFit: BoxFit.contain,
               images:[Image.asset("zafar/banner_z.jpg", fit: BoxFit.cover,),
               Image.asset("zafar/banner_image.jpg",fit: BoxFit.cover),
@@ -149,25 +153,15 @@ class homeview extends StatelessWidget {
                 
          Divider(height: 20,color: Colors.grey,),
       
-         Container(
-          height: 300,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            color: Colors.black
-          ), child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,  
-            children: [
-             Padding(
-               padding: const EdgeInsets.only(top: 20, left: 10),
-               child: Text("M Y F O O T W E A R",style: TextStyle(
-                color: Colors.white,fontWeight: FontWeight.bold,fontSize: 25),), ),
-          
-        
-          ],),),
+         discriptions(),
+
+         
           ],),
          ),
        ),);
   }
+
+ 
 }
 
 

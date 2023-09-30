@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:web_design/widget/homepage.dart';
+import 'package:web_design/widget/buypage.dart';
+
 
 class offer extends StatelessWidget {
    offer({
@@ -22,14 +23,14 @@ String title ;
       children: [
         InkWell(
           
-          onTap: () => Navigator.push(context,MaterialPageRoute(builder:(context) => homepage(),)),
+          onTap: () => Navigator.push(context,MaterialPageRoute(builder:(context) => buypage(),)),
           child: Container(
             child: Container(child: image,),
             height: 250,
               width: 200,
               decoration:
           BoxDecoration(
-           borderRadius: BorderRadius.circular(5),
+          //  borderRadius: BorderRadius.circular(10),
            color:Color.fromARGB(255, 220, 220, 220) ),
            
           ),

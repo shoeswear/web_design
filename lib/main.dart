@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:web_design/widget/buypage.dart';
-import 'package:web_design/widget/homepage.dart';
 import 'package:web_design/widget/navbar.dart';
+import 'package:web_design/widget/weather_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(home:homeview(),
     
 
-initialRoute: "/buypage",
+initialRoute: "/weatherapp",
  routes: {
-          "/buypage":  (context) =>buypage() }
+          "/weatherapp":  (context) =>weatherapp()}
     
     
     );
