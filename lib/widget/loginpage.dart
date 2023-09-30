@@ -12,16 +12,16 @@ class loginpage extends StatelessWidget {
       child: Material(
         child:SingleChildScrollView(
           child: Column(children: [
-           Image(image: AssetImage( "zafar/login_image.png",),fit: BoxFit.contain,),
-           Text("welcome",style: 
-           TextStyle(fontSize: 25),),SizedBox(height: 15,),
+           const Image(image: AssetImage( "zafar/login_image.png",),fit: BoxFit.contain,),
+           const Text("welcome",style: 
+           TextStyle(fontSize: 25),),const SizedBox(height: 15,),
            Padding(
-             padding: EdgeInsets.all(20.0),
+             padding: const EdgeInsets.all(20.0),
              child: Column(children: [ 
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal:10),
                 child: TextFormField(decoration: 
-                           InputDecoration(border:OutlineInputBorder(
+                           const InputDecoration(border:OutlineInputBorder(
                             borderRadius: BorderRadius.all(Radius.circular(20 ))
                            ),
                 hintText: "Enter email",prefixIcon: Icon(Icons.email,color: Colors.amberAccent,),
@@ -29,18 +29,18 @@ class loginpage extends StatelessWidget {
               ),
           
     
-           SizedBox(height: 10,),
+           const SizedBox(height: 10,),
     
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal:10),
                 child: TextFormField(obscureText: true,
                 decoration: 
                            InputDecoration(border:OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
-                hintText: "Password",prefixIcon: Icon(Icons.password_outlined,color: Colors.amber,),
+                hintText: "Password",prefixIcon: const Icon(Icons.password_outlined,color: Colors.amber,),
                            labelText: "Enter password"),),
               ),],),
            ),
-           SizedBox(height: 0,),
+           const SizedBox(height: 0,),
     
            ElevatedButton(
             onPressed: (){
@@ -48,17 +48,17 @@ class loginpage extends StatelessWidget {
             
            }, 
            
-           child: Text("login"),style:
-           TextButton.styleFrom(minimumSize: Size(300,40),),),
+           child: const Text("login"),style:
+           TextButton.styleFrom(minimumSize: const Size(300,40),),),
            
-          SizedBox(height: 10,),
+          const SizedBox(height: 10,),
           
           Row(crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment:MainAxisAlignment.center,children: [
-            Text("already have an account ?",style:
+            const Text("already have an account ?",style:
            TextStyle(fontStyle: FontStyle.italic),),
             TextButton(onPressed:(){}, child: 
-          Center(child: Text("sing up",style: TextStyle(fontWeight: FontWeight.bold),),),),
+          const Center(child: Text("sing up",style: TextStyle(fontWeight: FontWeight.bold),),),),
           ],),
          
           ],),
