@@ -15,20 +15,20 @@ class _buypageState extends State<buypage> {
     return SafeArea(
       child: Scaffold(
         appBar: PreferredSize(
-            preferredSize: Size(100, 100),
+            preferredSize: const Size(100, 100),
             child: AppBar(
               automaticallyImplyLeading: false,
               backgroundColor: Colors.lightBlueAccent,
             )),
         body: Row(
           children: [
-            SizedBox(
+            const SizedBox(
               width: 20,
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 100,
                 ),
                 Container(
@@ -38,7 +38,7 @@ class _buypageState extends State<buypage> {
                     "zafar/crocs.jpg",
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
@@ -47,7 +47,7 @@ class _buypageState extends State<buypage> {
                     "zafar/green_flip.jpg",
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
@@ -56,7 +56,7 @@ class _buypageState extends State<buypage> {
                     "zafar/shoes.jpg",
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
@@ -84,41 +84,41 @@ class _buypageState extends State<buypage> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 70,
                     ),
-                    Text(
+                    const Text(
                       "NIKE SB DUNK LOW BEN JERRY",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           "\u{20B9}3999",
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
-                        Text(
+                        const Text(
                           "\u{20B9}6999",
                           style: TextStyle(
                               fontWeight: FontWeight.w100,
                               decoration: TextDecoration.lineThrough),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
                         Container(
                           height: 15,
                           width: 70,
                           decoration: BoxDecoration(color: Colors.green[700]),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "50% OFF",
                               style:
@@ -128,51 +128,51 @@ class _buypageState extends State<buypage> {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           "EMI",
                           style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
-                        Text(
+                        const Text(
                           "starts at \u{20B9}193.9/month",
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
                         InkWell(
                           onTap: () {},
-                          child: Text(
+                          child: const Text(
                             "Know More",
                             style: TextStyle(color: Colors.blue),
                           ),
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
-                    Divider(
+                    const Divider(
                       endIndent: 50,
                       thickness: 0.1,
                       color: Colors.black,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
-                    Text("Size"),
-                    SizedBox(
+                    const Text("Size"),
+                    const SizedBox(
                       height: 10,
                     ),
                     Row(
@@ -183,63 +183,63 @@ class _buypageState extends State<buypage> {
                           onTap: () {},
                           child: Container(
                             width: 30,
-                            child: Center(child: Text("41")),
+                            child: const Center(child: Text("41")),
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.black),
                               borderRadius: BorderRadius.circular(5),
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         InkWell(
                           onTap: () {},
                           child: Container(
                             width: 30,
-                            child: Center(child: Text("42")),
+                            child: const Center(child: Text("42")),
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.black),
                               borderRadius: BorderRadius.circular(5),
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         InkWell(
                           onTap: () {},
                           child: Container(
                             width: 30,
-                            child: Center(child: Text("43")),
+                            child: const Center(child: Text("43")),
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.black),
                               borderRadius: BorderRadius.circular(5),
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         InkWell(
                           onTap: () {},
                           child: Container(
                             width: 30,
-                            child: Center(child: Text("44")),
+                            child: const Center(child: Text("44")),
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.black),
                               borderRadius: BorderRadius.circular(5),
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         InkWell(
                           onTap: () {},
                           child: Container(
                             width: 30,
-                            child: Center(child: Text("45")),
+                            child: const Center(child: Text("45")),
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.black),
                               borderRadius: BorderRadius.circular(5),
@@ -248,7 +248,7 @@ class _buypageState extends State<buypage> {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 100,
                     ),
                     Row(
@@ -257,17 +257,17 @@ class _buypageState extends State<buypage> {
                       children: [
                         ElevatedButton(
                           style: ButtonStyle(
-                            fixedSize: MaterialStateProperty.all(Size(250, 50)),
+                            fixedSize: MaterialStateProperty.all(const Size(250, 50)),
                             backgroundColor:
                                 MaterialStateProperty.all(Colors.cyanAccent),
                             shape: MaterialStateProperty.all(
                               RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(5),
-                                  side: BorderSide(color: Colors.black)),
+                                  side: const BorderSide(color: Colors.black)),
                             ),
                           ),
                           onPressed: () {},
-                          child: Text(
+                          child: const Text(
                             "Buy Now",
                             style: TextStyle(
                               color: Colors.black,
@@ -275,22 +275,22 @@ class _buypageState extends State<buypage> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         ElevatedButton(
                           style: ButtonStyle(
-                            fixedSize: MaterialStateProperty.all(Size(250, 50)),
+                            fixedSize: MaterialStateProperty.all(const Size(250, 50)),
                             backgroundColor:
                                 MaterialStateProperty.all(Colors.cyanAccent),
                             shape: MaterialStateProperty.all(
                               RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(5),
-                                  side: BorderSide(color: Colors.black)),
+                                  side: const BorderSide(color: Colors.black)),
                             ),
                           ),
                           onPressed: () {},
-                          child: Text(
+                          child: const Text(
                             "Add to Cart",
                             style: TextStyle(
                               color: Colors.black,
